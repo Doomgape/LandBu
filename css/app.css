@@ -109,4 +109,10 @@ ul {
   .order-link:hover {
     background-color: #cb411b; }
 
+.hero {
+  background-image: url("../img/bg/hero_bg.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative; }
 /*# sourceMappingURL=app.css.map */
