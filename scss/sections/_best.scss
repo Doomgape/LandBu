@@ -13,3 +13,38 @@
   padding: 0;
   margin-bottom: rem(60px);
 }
+
+.best__content {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 20%;
+  justify-content: center;
+}
+
+.best__aboutfood {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.meat__information, .hand__information, .natural__information {
+  flex-basis: 33.3%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.best__desc {
+  color: #000;
+  font-family: 'Lifehack';
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 6%;
+}

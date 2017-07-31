@@ -105,3 +105,11 @@
   font-weight: 500;
   line-height: 1;
 }
+.hero__arrow {
+  margin:0 auto;
+  position:absolute;
+  bottom:25px;
+  &:hover {
+    bottom:22px;
+  }
+}
