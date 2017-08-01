@@ -259,24 +259,30 @@ ul {
       -ms-flex-align: center;
           align-items: center; }
 
+.best__wrapper {
+  width: 940px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 20%; }
+
 .section__title--best {
   color: #2f3234;
   padding: 0;
   margin-bottom: 3.75rem; }
-
-.best__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 20%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
 
 .best__aboutfood {
   width: 100%;
@@ -292,7 +298,7 @@ ul {
       -ms-flex-align: start;
           align-items: flex-start; }
 
-.meat__information, .hand__information, .natural__information {
+.best__information {
   -ms-flex-preferred-size: 33.3%;
       flex-basis: 33.3%;
   display: -webkit-box;
