@@ -16,7 +16,7 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-bottom: 20%;
+  padding-bottom: 1 0%;
 }
 
 .section__title--best {
@@ -28,9 +28,11 @@
 .best__aboutfood {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
   align-items: flex-start;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /*flex-wrap: wrap;
+  flex-grow: 1;*/
 }
 
 .best__information {
