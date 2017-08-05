@@ -10,7 +10,8 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/app.css">
-
+    <script src="js/svg4everybody.js"></script>
+		<script>svg4everybody();</script>
   </head>
   <body>
     <div class="wrapper">
@@ -46,7 +47,13 @@
                 <div class="hero__description-text">натуральные бургеры</div>
               </div>
             </div>
-            <div class="hero__arrow"><a class="arrow" href="#reviews"><img class="arrow__img" src="img/content/icons/arrow-scroll.svg" alt="arrow-scroll"></a></div>
+            <div class="hero__arrow">
+              <a class="arrow" href="#">
+                <svg class="hero__icon">
+                  <use xlink:href="icons/sprite/sprite.svg#arrow-scroll"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </section>
 
@@ -56,7 +63,10 @@
               <div class="best__description"><h2 class="section__title section__title--best">Мы лучшие</h2></div>            
               <div class="best__aboutfood">
                 <div class="best__information">              
-                  <div class="best__img"><img src="img/content/items/meat.png" alt="meat">
+                  <div class="best__img">
+                    <svg class="best__icon best__icon--meat">
+                      <use xlink:href="icons/sprite/sprite.svg#meat"></use>
+                    </svg>
                   </div>
                   <div class="best__desc">100% свежее мясо
                   </div>
@@ -64,7 +74,10 @@
                   </div>
                 </div>
                 <div class="best__information">              
-                  <div class="best_img"><img src="img/content/items/hand.png" alt="hand">
+                  <div class="best__img">
+                    <svg class="best__icon best__icon--hand">
+                      <use xlink:href="icons/sprite/sprite.svg#hand"></use>
+                    </svg>
                   </div>
                   <div class="best__desc">Ручная сборка
                   </div>
@@ -72,7 +85,10 @@
                   </div>
                 </div>
                 <div class="best__information">              
-                  <div class="best__img"><img src="img/content/items/natural.png" alt="natural">
+                  <div class="best__img">
+                    <svg class="best__icon best__icon--natural">
+                      <use xlink:href="icons/sprite/sprite.svg#natural"></use>
+                    </svg>
                   </div>
                   <div class="best__desc">Натуральные ингридиенты
                   </div>
@@ -84,9 +100,104 @@
           </div>
         </section>
 
+        <section class="section team">
+          <div class="section__wrapper">
+            <div class="team__section">
+              <div class="team__content">
+                <div class="section__title">
+                Команда  
+                </div>
+              <ul class="team-accordeon"> 
+                <li class="team-accordeon__item ">
+                  <div class="team-accordeon__title">
+                    Дэниел Редклифф
+                  </div>
+                  <div class="team-accordeon__content">
+                    <div class="team-accordeon__image">
+                      <div class="team-accordeon__avatar">
+                        <img src="img/content/items/team_operator_1.png" alt="" class="team-accordeon__avatar-pic">
+                      </div>
+                    </div>
+                  <div class="team-accordeon__description">
+                    <div class="team-accordeon__description-title">
+                      Оператор
+                    </div>
+                    <div class="team-accordeon__description-text">
+                      <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                    </div>
+                  </div>
+                  </div>
+                </li>
+                <li class="team-accordeon__item active">
+                  <div class="team-accordeon__title">
+                    Ричард Джеймс
+                  </div>
+                  <div class="team-accordeon__content">
+                    <div class="team-accordeon__image">
+                      <div class="team-accordeon__avatar">
+                        <img src="img/content/items/team_operator_1.png" alt="" class="team-accordeon__avatar-pic">
+                      </div>
+                    </div>
+                  <div class="team-accordeon__description">
+                    <div class="team-accordeon__description-title">
+                      Оператор
+                    </div>
+                    <div class="team-accordeon__description-text">
+                      <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                    </div>
+                  </div>
+                  </div>
+                </li>  
+                <li class="team-accordeon__item">
+                  <div class="team-accordeon__title">
+                    Джейк Финн
+                  </div>
+                  <div class="team-accordeon__content">
+                    <div class="team-accordeon__image">
+                      <div class="team-accordeon__avatar">
+                        <img src="img/content/items/team_operator_1.png" alt="" class="team-accordeon__avatar-pic">
+                      </div>
+                    </div>
+                  <div class="team-accordeon__description">
+                    <div class="team-accordeon__description-title">
+                      Оператор
+                    </div>
+                    <div class="team-accordeon__description-text">
+                      <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                    </div>
+                  </div>
+                  </div>
+                </li>  
+                <li class="team-accordeon__item">
+                  <div class="team-accordeon__title">
+                    Николай Иванов
+                  </div>
+                  <div class="team-accordeon__content">
+                    <div class="team-accordeon__image">
+                      <div class="team-accordeon__avatar">
+                        <img src="img/content/items/team_operator_1.png" alt="" class="team-accordeon__avatar-pic">
+                      </div>
+                    </div>
+                  <div class="team-accordeon__description">
+                    <div class="team-accordeon__description-title">
+                      Оператор
+                    </div>
+                    <div class="team-accordeon__description-text">
+                      <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                    </div>
+                  </div>
+                  </div>
+                </li>  
+              </ul>  
+              </div>            
+            </div>
+          </div>
+        </section>
+
         <section class="section burgers">
           <div class="container"></div>
         </section>
+
         <section class="section rewiews">
           <ul class="reviews__list">
             <li class="reviews__item">
@@ -171,7 +282,86 @@
             </li>
           </ul>
         </section>
+
+        <section class="section order">
+          <div class="order__mask">
+            <div class="section__wrapper">
+              <div class="section__title">
+                Закажите доставку
+              </div>
+              <form action="">
+                <div class="order__forms">
+                  <div class="form">
+                    <div class="form__titles">
+                      <div class="form__titles-name">Имя</div>
+                      <div class="form__titles-telephone">Телефон</div>
+                    </div>
+                    <div class="form__row ">
+                      <input type="text" class="form__input">                      
+                      <input type="text" class="form__input">
+                    </div>
+                    <div class="form__titles">
+                      <div class="form__titles-street">Улица</div>                      
+                    </div>
+                    <div class="form__row">
+                      <input type="text" class="form__input">
+                    </div>
+                    <div class="form__titles">
+                      <div class="form__titles-house">Дом</div>
+                      <div class="form__titles-part">Корпус</div>
+                      <div class="form__titles-flat">Квартира</div>
+                      <div class="form__titles-floor">Этаж</div>
+                    </div>
+                    <div class="form__row">
+                      <input type="text" class="form__input">
+                      <input type="text" class="form__input">
+                      <input type="text" class="form__input">
+                      <input type="text" class="form__input">
+                    </div>                  
+                  </div> 
+                  <div class="form-right">
+                    <div class="form__titles">
+                      <div class="form__titles-comment">Комментарий</div>                      
+                    </div>
+                      <div class="form-right__row form__row-right">
+                        <textarea name="text" class="form__input form-right"></textarea>
+                      </div>                  
+                      <div class="order__radio">
+                      <label><input type="radio" class="order__radio-first" checked name="money"/> Потребуется сдача</label> 
+                      <label><input type="radio" class="order__radio-second" name="money"/> Оплата по карте</label>
+                      </div>
+                      <div class="order__callback">
+                        <label><input type="checkbox" checked/> Не перезванивать</label>
+                      </div>
+                      <div class="order__confirm">
+                        <div class="order__submit-btn"><input class="order-link" type="submit" value="Заказать"></div>
+                        <div class="order__clear"><input class="order-reset" type="reset" value="Очистить"></div>
+                      </div>
+                  </div>
+                </div>
+              </form> 
+            </div>
+          </div>
+        </section>
+
       </div>
     </div>
+    <ul class="fixed-menu">
+      <li class="fixed-menu__item active"> 
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item"> 
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item"> 
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item"> 
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+       <li class="fixed-menu__item"> 
+        <a href="" class="fixed-menu__link"></a>
+      </li>
+    </ul>
   </body>
 </html>
