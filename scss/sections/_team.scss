@@ -46,6 +46,7 @@ align-items: center;
 .team-accordeon__item {
     margin-bottom: 20px;
     &.active {
+        margin-bottom: 40px;
         .team-accordeon__content{
             height: auto;
         }
@@ -59,15 +60,15 @@ align-items: center;
 }
 
 .team-accordeon__content {
-    display:flex;
+    display: flex;
     overflow: hidden;
     height: 0;
-    align-items: center;
+    align-items: flex-start;
 
 }
 
 .team-accordeon__description {
-padding-left:30px
+padding-left:22px
 }
 .team-accordeon__image {
 padding-left:30px;

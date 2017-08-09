@@ -20,6 +20,7 @@
     align-items: flex-start;
     justify-content: space-around;
     color: #fff;
+    padding-top: 60px;
 }
 
 .form {
@@ -51,13 +52,13 @@ flex-basis: 50%;
 
 .form__row {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     align-items: flex-start;
     justify-content: space-around;
 }
 .form__input {
     font-size: 16px;
-    padding: 14px;
+    padding: 10px;
     background: #fff;
     border-radius: 7px;
     border:none;
@@ -68,12 +69,12 @@ flex-basis: 50%;
         margin-left: 0;
     }
     &.form-right {
-        height: 132px;
+        height: 110px;
     }
 }
 .form-right {
     height: 100%;
-    margin-left: 30px;
+    margin-left: 20px;
     flex-basis: 50%;
 }
 .form__row-right {
@@ -82,15 +83,15 @@ flex-basis: 50%;
 
 .order__radio {
     
-    margin-top: 20px;
+    margin-top: 12px;
 }
 
 .order__radio-second {
-    margin-left: 20px;
+    margin-left: 8px;
 }
 
 .order__callback {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .order__confirm {
@@ -99,14 +100,14 @@ flex-basis: 50%;
     align-items: flex-start;
 }
 .order__submit-btn {
-    margin-top: 20px;
+    margin-top: 14px;
     &.order-link {
         border:none;
     }
 }
 
 .order__clear {
-    margin: 20px 20px;
+    margin: 14px 16px;
     padding-top: 10px;
 }
 
