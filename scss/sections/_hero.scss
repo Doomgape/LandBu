@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
+  padding-top: rem(10px);
 }
 
 .header__logo {
@@ -35,17 +35,20 @@
     display: inline-block;
     vertical-align: middle;
     content: ' ';
-    @include circle(5px, #fff);
-    margin: 0 12px;
+    @include circle(rem(5px), #fff);
+    margin: 0 rem(12px);
   }
   &:last-child:after {
+    display: none;
+  }
+  @include tablets() {
     display: none;
   }
 }
 
 .nav__link {
   color: #ffffff;
-  font-size: 13px;
+  font-size: rem(13px);
   font-weight: 500;
   line-height: 1.42;
   text-transform: uppercase;
@@ -58,6 +61,8 @@
   }
 }
 .hero__container {
+  max-width: 940px;
+  width: 95%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -68,15 +73,27 @@
 .hero__content {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   flex-grow: 1;
   align-items: center;
   padding-bottom: 15%;
+  @include tablets() {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 20%;
+    text-align: center;
+  }
+  @include phones() {
+    padding: 0;
+  }
 }
 
 .hero__img, .hero__description {
-  flex-basis: 50%;
   display: flex;
+  width: 50%;
+  @include tablets() {
+    width: auto;
+  }
 }
 
 .hero__img {
@@ -91,27 +108,27 @@
 .section__title {
   color: #f9b43b;
   font-family: 'Gagalin';
-  font-size: 72px;
+  font-size: rem(72px);
   font-weight: 400;
   line-height: 1.42;
   margin: 0;
-  padding-top: 60px;
+  padding-top: rem(60px);
   
 }
 
 .hero__description-text {
   color: #ffffff;
   font-family: 'Lifehack';
-  font-size: 65px;
+  font-size: rem(65px);
   font-weight: 500;
   line-height: 1;
 }
 .hero__arrow {
   margin: 0 auto;
   position: absolute;
-  bottom: 25px;
-  height: 25px;
-  width: 25px;
+  bottom: rem(25px);
+  height: rem(25px);
+  width: rem(25px);
 }
 .hero__icon {
   width: 100%;

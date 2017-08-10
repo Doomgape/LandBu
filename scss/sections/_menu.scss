@@ -12,8 +12,8 @@
 }
 
 .menu-title {
-        top: 110px;
-        left: 90px;
+        top: rem(110px);
+        left: rem(90px);
         position: absolute;
         color: #fff;
 }
@@ -37,7 +37,7 @@
 }
 .menu-accordeon__mask {
     height: 100%;
-    width: 80px;
+    width: rem(80px);
     background-color: rgba(47, 50, 52, 0.7);
 }
 
@@ -47,22 +47,25 @@
     display: flex;
     &.active {
         .menu-accordeon__content{
-            padding: 60px 30px;
-            width: 540px; 
+            padding: rem(60px) rem(30px);
+            width: rem(540px); 
             color: white;
+            @include tablets() {
+                width: 100%;
+            }
         }
     }
 }
 
 .menu-accordeon__title {
-    width: 80px;
+    width: rem(80px);
     background: transparent;
 }
 
 .menu-accordeon__link{
-    font: 40px 'Gagalin';
-    font-size: 40px;
-    line-height: 64px;
+    font: rem(40px) 'Gagalin';
+    font-size: rem(40px);
+    line-height: rem(64px);
     color: #fff;
     text-decoration: none;
     display: inline-block;

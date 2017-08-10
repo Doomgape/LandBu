@@ -4,7 +4,7 @@
     position: relative;
 }
 .footer {
-    height: 60px;
+    height: rem(60px);
     width: 100%;
     background: #0d0d0d;
     position: absolute;
@@ -13,7 +13,7 @@
 
 .footer__wrapper {
     margin: 0 auto;
-    width: 940px;
+    width: rem(940px);
     display: flex;
     height: 100%;
 }
@@ -26,32 +26,32 @@
 
     &-address {
             font-family: 'Ubuntu-Light';
-            font-size: 14px;
+            font-size: rem(14px);
             color: white;
     }
     &__phone-link {
             font-family: 'Ubuntu-Bold';
-            font-size: 14px;
+            font-size: rem(14px);
             color: #e45028;            
     }
 }
 
 .footer__social {
-    padding-top: 20px;
+    padding-top: rem(20px);
     text-align: right;
     width: 50%;
 
         &-item {
             display: inline-block;
-            margin-left: 10px;
+            margin-left: rem(10px);
         }
         &-link {
             display: block;            
         }
         &-img {
-            height:17px;
+            height:rem(17px);
             fill: #5a5a5a;
-            width: 30px;
+            width: rem(30px);
             &:hover {
                 fill: #fff;
             }

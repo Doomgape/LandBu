@@ -20,56 +20,68 @@
     align-items: flex-start;
     justify-content: space-around;
     color: #fff;
-    padding-top: 60px;
+    padding-top: rem(60px);
+
+    @include tablets() {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .form {
 flex-basis: 50%;
+    @include tablets() {
+        flex-direction: column;
+        display: flex;
+        align-items: stretch;
+        width: 50%;
+    }
 }
 
 .form__titles {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 20px;
+    height: rem(20px);
 }
 
 .form__titles-telephone {
-    margin-left: 204px;
+    margin-left: rem(204px);
 }
 
 .form__titles-part {
-    margin-left: 85px;
+    margin-left: rem(85px);
 }
 
 .form__titles-flat {
-    margin-left: 67px;
+    margin-left: rem(67px);
 }
 
 .form__titles-floor {
-    margin-left: 47px;
+    margin-left: rem(47px);
 }
 
 .form__row {
     display: flex;
-    margin-bottom: 17px;
+    margin-bottom: rem(17px);
     align-items: flex-start;
     justify-content: space-around;
 }
 .form__input {
-    font-size: 16px;
-    padding: 10px;
+    font-size: rem(16px);
+    padding: rem(10px);
     background: #fff;
-    border-radius: 7px;
+    border-radius: rem(7px);
     border:none;
     flex: 1;
-    margin-left: 20px;
+    margin-left: rem(20px);
     width: 100%;
     &:first-child {
         margin-left: 0;
     }
     &.form-right {
-        height: 110px;
+        height: rem(110px);
     }
 }
 .form-right {

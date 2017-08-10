@@ -1,3 +1,9 @@
+//Resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
 //Config
 @import "config/_mixins";
 @import "config/_variables";
@@ -17,3 +23,4 @@
 @import "sections/_fixed-menu";
 @import "sections/_menu";
 @import "sections/_contacts";
+@import "sections/_hamburger-menu"

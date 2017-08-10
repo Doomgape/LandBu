@@ -1,0 +1,16 @@
+.hamburger-menu {
+    vertical-align: middle;
+    position: relative;
+    height: rem(40px);    
+    width: rem(40px);
+    margin-left: rem(10px);
+    display: none;
+
+    @include tablets() {
+        display: flex;
+    }
+}
+
+.hamburger-menu__bars {
+    fill: #fff;
+}
