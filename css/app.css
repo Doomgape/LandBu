@@ -550,7 +550,9 @@ img {
 
 .order {
   background: url(../img/bg/form_bg.png) center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  color: #fff;
+  text-align: center; }
 
 .order__mask {
   background: rgba(0, 0, 0, 0.9);
@@ -562,72 +564,59 @@ img {
   align-items: center;
   justify-content: center; }
 
-.order__forms {
+.order__form-main {
+  width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
-  justify-content: space-around;
-  color: #fff;
-  padding-top: 3.75rem; }
+  max-width: 940px;
+  height: 100%;
+  margin-top: 50px; }
   @media screen and (max-width: 768px) {
-    .order__forms {
+    .order__form-main {
       flex-direction: column;
-      display: flex;
-      align-items: center; } }
+      padding: 0 17%; } }
 
-.form {
-  flex-basis: 50%; }
-  @media screen and (max-width: 768px) {
-    .form {
-      flex-direction: column;
-      display: flex;
-      align-items: stretch;
-      width: 50%; } }
-
-.form__titles {
+.order__left-blocks {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 1.25rem; }
+  flex-direction: column;
+  align-items: center; }
 
-.form__titles-telephone {
-  margin-left: 12.75rem; }
-
-.form__titles-part {
-  margin-left: 5.3125rem; }
-
-.form__titles-flat {
-  margin-left: 4.1875rem; }
-
-.form__titles-floor {
-  margin-left: 2.9375rem; }
-
-.form__row {
+.order__right-blocks {
+  width: 100%;
+  height: 100%;
   display: flex;
-  margin-bottom: 1.0625rem;
+  flex-direction: column;
+  align-items: center; }
+
+.order__outer-blocks {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row; }
+
+.order__inner-blocks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around; }
+  padding: 10px; }
+
+.form-field {
+  width: 100%; }
 
 .form__input {
+  width: 100%;
   font-size: 1rem;
   padding: 0.625rem;
   background: #fff;
   border-radius: 0.4375rem;
   border: none;
-  flex: 1;
-  margin-left: 1.25rem;
-  width: 100%; }
-  .form__input:first-child {
-    margin-left: 0; }
+  flex: 1; }
   .form__input.form-right {
-    height: 6.875rem; }
-
-.form-right {
-  height: 100%;
-  margin-left: 20px;
-  flex-basis: 50%; }
-
-.form__row-right {
-  height: 100%; }
+    height: 7.3125rem; }
 
 .order__radio {
   margin-top: 12px; }

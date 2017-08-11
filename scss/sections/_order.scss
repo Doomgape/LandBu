@@ -1,6 +1,8 @@
 .order {
     background: url(../img/bg/form_bg.png) center center no-repeat;
     background-size: cover;
+    color: #fff;
+    text-align: center;
 }
 
 .order__mask {
@@ -15,83 +17,64 @@
     justify-content: center;
 }
 
-.order__forms {
+.order__form-main {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: space-around;
-    color: #fff;
-    padding-top: rem(60px);
-
+    max-width: 940px;
+    height: 100%;
+    margin-top: 50px;
     @include tablets() {
         flex-direction: column;
-        display: flex;
-        align-items: center;
+        padding: 0 17%;
+        
     }
 }
 
-.form {
-flex-basis: 50%;
-    @include tablets() {
-        flex-direction: column;
-        display: flex;
-        align-items: stretch;
-        width: 50%;
-    }
+.order__left-blocks {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.form__titles {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: rem(20px);
+.order__right-blocks {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.form__titles-telephone {
-    margin-left: rem(204px);
+.order__outer-blocks {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
-
-.form__titles-part {
-    margin-left: rem(85px);
+.order__inner-blocks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
 }
-
-.form__titles-flat {
-    margin-left: rem(67px);
-}
-
-.form__titles-floor {
-    margin-left: rem(47px);
-}
-
-.form__row {
-    display: flex;
-    margin-bottom: rem(17px);
-    align-items: flex-start;
-    justify-content: space-around;
+.form-field {
+  width:100%;
 }
 .form__input {
+    width:100%;
     font-size: rem(16px);
     padding: rem(10px);
     background: #fff;
     border-radius: rem(7px);
     border:none;
     flex: 1;
-    margin-left: rem(20px);
-    width: 100%;
-    &:first-child {
-        margin-left: 0;
-    }
     &.form-right {
-        height: rem(110px);
+        height: rem(117px);
     }
 }
-.form-right {
-    height: 100%;
-    margin-left: 20px;
-    flex-basis: 50%;
-}
-.form__row-right {
-    height: 100%;
-}
+
 
 .order__radio {
     
