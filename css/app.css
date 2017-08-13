@@ -757,9 +757,13 @@ img {
   overflow: hidden; }
 
 .contacts {
-  background: url("../img/bg/map.png") center center no-repeat;
+  background: none;
   background-size: cover;
   position: relative; }
+
+.contacts__map {
+  width: 100%;
+  height: 100%; }
 
 .footer {
   height: 3.75rem;
