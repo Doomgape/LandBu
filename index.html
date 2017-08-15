@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/app.css">
   <script src="js/svg4everybody.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.js" type="text/javascript"></script>
   <script>
     svg4everybody();
   </script>
@@ -374,105 +376,107 @@
             <div class="section__title">
               Закажите доставку
             </div>
-          <form action="">
-            <div class="order__form-main">
-              <div class="order__left-blocks">
-                <div class="order__outer-blocks">
-                  <div class="order__inner-blocks">
-                    <div class="title">
-                      Имя
+            <form action="">
+              <div class="order__form-main">
+                <div class="order__left-blocks">
+                  <div class="order__outer-blocks">
+                    <div class="order__inner-blocks">
+                      <div class="title">
+                        Имя
+                      </div>
+                      <div class="form-field">
+                        <input type="text" class="form__input">
+                      </div>
                     </div>
-                    <div class="form-field">
-                      <input type="text" class="form__input">
+                    <div class="order__inner-blocks">
+                      <div class="title">
+                        Телефон
+                      </div>
+                      <div class="form-field">
+                        <input type="text" class="form__input">
+                      </div>
                     </div>
                   </div>
-                  <div class="order__inner-blocks">
-                    <div class="title">
-                      Телефон
+                  <div class="order__outer-blocks">
+                    <div class="order__inner-blocks">
+                      <div class="title">
+                        Адрес
+                      </div>
+                      <div class="form-field">
+                        <input type="text" class="form__input">
+                      </div>
                     </div>
-                    <div class="form-field">
-                      <input type="text" class="form__input">
+                  </div>
+                  <div class="order__outer-blocks">
+                    <div class="order__inner-blocks">
+                      <div class="title">
+                        Дом
+                      </div>
+                      <div class="form-field">
+                        <input type="text" class="form__input">
+                      </div>
+                    </div>
+                    <div class="order__inner-blocks">
+                      <div class="title">
+                        Корпус
+                      </div>
+                      <div class="form-field">
+                        <input type="text" class="form__input">
+                      </div>
+                    </div>
+                    <div class="order__inner-blocks">
+                      <div class="title">
+                        Квартира
+                      </div>
+                      <div class="form-field">
+                        <input type="text" class="form__input">
+                      </div>
+                    </div>
+                    <div class="order__inner-blocks">
+                      <div class="title">
+                        Этаж
+                      </div>
+                      <div class="form-field">
+                        <input type="text" class="form__input">
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="order__outer-blocks">
-                  <div class="order__inner-blocks">
-                    <div class="title">
-                      Адрес
-                    </div>
-                    <div class="form-field">
-                      <input type="text" class="form__input">
-                    </div>
-                  </div>
-                </div>
-                <div class="order__outer-blocks">
-                  <div class="order__inner-blocks">
-                    <div class="title">
-                      Дом
-                    </div>
-                    <div class="form-field">
-                      <input type="text" class="form__input">
-                    </div>
-                  </div>
-                  <div class="order__inner-blocks">
-                    <div class="title">
-                      Корпус
-                    </div>
-                    <div class="form-field">
-                      <input type="text" class="form__input">
-                    </div>
-                  </div>
-                  <div class="order__inner-blocks">
-                    <div class="title">
-                      Квартира
-                    </div>
-                    <div class="form-field">
-                      <input type="text" class="form__input">
-                    </div>
-                  </div>
-                  <div class="order__inner-blocks">
-                    <div class="title">
-                      Этаж
-                    </div>
-                    <div class="form-field">
-                      <input type="text" class="form__input">
+                <div class="order__right-blocks">
+                  <div class="order__outer-blocks">
+                    <div class="order__inner-blocks">
+                      <div class="title">
+                        Комментарий
+                      </div>
+                      <div class="form-field">
+                        <textarea name="text" class="form__input form-right"></textarea>
+                      </div>
+                      <div class="order__radio">
+                        <label><input type="radio" class="order__radio-first" checked name="money"/> Потребуется сдача</label>
+                        <label><input type="radio" class="order__radio-second" name="money"/> Оплата по карте</label>
+                      </div>
+                      <div class="order__callback">
+                        <label><input type="checkbox" checked/> Не перезванивать</label>
+                      </div>
+                      <div class="order__confirm">
+                        <button class="order__submit-btn order-link" type="submit" value="">Заказать</button>
+                        <button class="order__clear" type="reset" value="">Очистить</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-
               </div>
-              <div class="order__right-blocks">
-                <div class="order__outer-blocks">
-                  <div class="order__inner-blocks">
-                    <div class="title">
-                      Комментарий
-                    </div>
-                    <div class="form-field">
-                      <textarea name="text" class="form__input form-right"></textarea>
-                    </div>
-                    <div class="order__radio">
-                      <label><input type="radio" class="order__radio-first" checked name="money"/> Потребуется сдача</label>
-                      <label><input type="radio" class="order__radio-second" name="money"/> Оплата по карте</label>
-                    </div>
-                    <div class="order__callback">
-                      <label><input type="checkbox" checked/> Не перезванивать</label>
-                    </div>
-                    <div class="order__confirm">
-                      <div class="order__submit-btn"><input class="order-link" type="submit" value="Заказать"></div>
-                      <div class="order__clear"><input class="order-reset" type="reset" value="Очистить"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
+            </form>
           </div>
         </div>
       </section>
 
       <section class="section contacts">
+        <div id="map" class="contacts__map"></div>
         <footer class="footer">
+          
           <div class="footer__wrapper">
+            
             <div class="footer__content">
               <div class="footer__content-address">
                 Санкт-Петербург, ул.Бабушкина, д.12/1, 15
@@ -513,6 +517,7 @@
             </ul>
           </div>
         </footer>
+        
       </section>
 
     </div>
