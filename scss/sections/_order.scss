@@ -73,6 +73,7 @@
     &.form-right {
         height: rem(117px);
     }
+    resize: none;
 }
 
 
@@ -104,9 +105,6 @@
 .order__clear {
     margin: 14px 16px;
     padding-top: 10px;
-}
-
-.order-reset{
     color: #fff;
     text-decoration: none;
     background: none;
@@ -116,3 +114,4 @@
         cursor: pointer;
     }
 }
+

@@ -614,7 +614,8 @@ img {
   background: #fff;
   border-radius: 0.4375rem;
   border: none;
-  flex: 1; }
+  flex: 1;
+  resize: none; }
   .form__input.form-right {
     height: 7.3125rem; }
 
@@ -639,14 +640,12 @@ img {
 
 .order__clear {
   margin: 14px 16px;
-  padding-top: 10px; }
-
-.order-reset {
+  padding-top: 10px;
   color: #fff;
   text-decoration: none;
   background: none;
   border: none; }
-  .order-reset:hover {
+  .order__clear:hover {
     text-decoration: underline;
     cursor: pointer; }
 
