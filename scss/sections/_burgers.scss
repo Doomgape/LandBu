@@ -10,9 +10,14 @@
   align-items: center;
   flex-direction: column;
   height: 100%;
+  position: relative;
 }
 .burgers__arrow {
   width: 10%;
+}
+
+.burgers__ingredients-block {
+
 }
 
 .burgers__arrow-right{
@@ -67,7 +72,7 @@
 .burgers__menu-information {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .burgers__menu-information .section__title {
@@ -88,6 +93,105 @@
 .burgers__menu-information--price-order {
 display: flex;
 flex-direction: row;
-align-items: center;
+align-items: baseline;
 }
 
+.text-rubles {
+  font-size: rem(30px);
+}
+
+.burgers-price {
+  color: #e35028;
+  font-size: rem(72px);
+  font-family: 'Gagalin';
+}
+
+.burgers-order {
+  padding: rem(20px);
+}
+
+.burgers__menu-inside {
+  width: rem(90px);
+  height: rem(90px);
+  position: absolute;
+  color: #fff;
+  font-size: rem(15px);
+  font-weight: 600;
+  text-align: center;
+  padding-top: rem(10px);
+
+  &.ingr {
+    background-color: #F08B31;
+    border-radius: 5px;
+    top: rem(100px);
+    left: rem(155px);
+    z-index: 1;
+    &:hover {
+      background-color: #e35028;
+      cursor: pointer;
+    }   
+  }
+
+  &.kkal {
+    bottom: rem(100px);
+    left: rem(155px);
+    background: url(../img/content/icons/kkal.svg) center center no-repeat;
+    padding-top: rem(40px);
+    line-height: rem(30px);
+    font-size: rem(17px);
+    opacity: 0.6;
+  }
+}
+
+.hidden-ingredients {
+  background: rgba(255,255,255,0.9);
+  display: none;
+  align-items: flex-start;
+  border-radius: rem(5px);
+  overflow: hidden;
+  position: absolute;
+  top: rem(100px);
+  left: rem(245px);
+}
+
+.hidden-ingredients--content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: rem(20px);
+}
+
+.hidden-ingredients--content-pics, 
+.hidden-ingredients--content-name, 
+.hidden-ingredients--content-grams {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden-ingredients--content-pics img {
+padding: rem(10px);
+height: rem(58px);
+}
+
+.content-name--text {
+  height: rem(58px);
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.hidden-ingredients--content-grams {
+  padding-left: rem(60px);
+  padding-right: rem(20px);
+}
+
+.content-name--grams {
+  height: rem(58px);
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
