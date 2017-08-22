@@ -1,3 +1,9 @@
+//Resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
 //Config
 @import "config/_mixins";
 @import "config/_variables";
@@ -12,3 +18,9 @@
 @import "sections/_best";
 @import "sections/_burgers";
 @import "sections/_reviews";
+@import "sections/_team";
+@import "sections/_order";
+@import "sections/_fixed-menu";
+@import "sections/_menu";
+@import "sections/_contacts";
+@import "sections/_hamburger-menu"

@@ -9,14 +9,15 @@
 }
 
 .best__wrapper {
-  width: 940px;
+  width: 95%;
+  max-width: rem(940px);
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-bottom: 20%;
+  padding-bottom: 1 0%;
 }
 
 .section__title--best {
@@ -28,9 +29,12 @@
 .best__aboutfood {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
   align-items: flex-start;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  @include phones() {
+    flex-direction: column;
+  }
 }
 
 .best__information {
@@ -41,12 +45,51 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  @include phones() {
+    flex-direction: row;
+  }
 }
 .best__desc {
   color: #000;
   font-family: 'Lifehack';
-  font-size: 25px;
+  font-size: rem(25px);
   font-weight: 500;
   line-height: 1;
   padding-bottom: 6%;
+  padding-top: rem(30px);
+}
+.best__img {
+  height: rem(90px);
+  @include phones() {    
+    width: 30%;
+  }
+}
+
+.best__icon {
+  width: 100%;
+  height:100%;
+}
+.best__icon--meat {
+    fill: #e25028;
+}
+.best__icon--hand {
+    fill: #f8b43a;
+}
+.best__icon--natural {
+    fill: #8ac03e;
+}
+
+.best__text {
+  @include phones() {
+    text-align: left;
+  }
+}
+
+.best__textcontent {
+  @include phones() {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+  }
 }
