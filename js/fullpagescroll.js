@@ -105,3 +105,16 @@ $(function () {
   }
 
 });
+
+    // One Page Scroll
+    $('.fixed-menu__item').on('click', function(e){
+      var elem = $(e.target).parent(),
+          num = elem.index() + 1,
+          siblings = elem.siblings();
+
+      if(!elem.hasClass('active')){
+          $.fn.fullpage.moveTo(num);
+          siblings.removeClass('active');
+          elem.addClass('active');
+      }
+  });
