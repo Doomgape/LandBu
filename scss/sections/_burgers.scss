@@ -1,71 +1,79 @@
 .burgers {
   background: linear-gradient(180deg,#f9b43b 0,#eb8c38 40%,#eb8c38 60%,#eb8c38 0,#f9b43b);
+  display: flex;
+  align-items: center;
 }
 
 .burgers__wrapper {
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 100%;
+  
+  
   position: relative;
-}
-.burgers__arrow {
-  width: 10%;
+  max-width: rem(940px);
 }
 
 .burgers__ingredients-block {
 
 }
 
-.burgers__arrow-right{
-  width: 10%;
-  display: flex;
-  align-items: center;
-  margin: rem(10px);
-}
-.burgers__arrow-left{
-  width: 10%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin: rem(10px);
-}
-.right-arrow {
+.owl-next {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  width: rem(15px);
+  height: rem(27px);
   background: url(../img/content/items/arrow-scroll-right.png) center center no-repeat;
+  @include tablets {
+    right: 0;
+  }
+}
+.owl-prev {
+  position: absolute;
+  top: 50%;
+  left: -5%;
   width: rem(15px);
   height: rem(27px);
+  background: url(../img/content/items/arrow-scroll-left.png) center center no-repeat;  
+  @include tablets {
+  left: 0;
+  }
 }
-.left-arrow {
-  background: url(../img/content/items/arrow-scroll-left.png) center center no-repeat;
-  width: rem(15px);
-  height: rem(27px);
-  flex-direction: row-reverse;
-}
-
 
 .burgers__section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center; 
 }
 
 .burges__menu {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 80%;
-  &.first__burger .burgers__menu-picture {
-    background: url(../img/bg/burger_bg.png) center center no-repeat;
-  }
-
+  width: 95%;
   &-picture {
     width: 50%;
   }
   &-information {
     width: 50%;
+  }
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+}
+
+.first__burger {
+  background: url(../img/bg/burger_bg.png) center center no-repeat;
+}
+
+.first__burger {
+  @include tablets {
+    background-size: 65%;
   }
 }
 
@@ -73,15 +81,20 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @include tablets {
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .burgers__menu-information .section__title {
   color: #fff;
+  padding-top:0;
+  line-height: 1;
 }
 
 .burgers__menu-picture {
   width: 50%;
-  height: 100%;
   min-width: rem(470px);
   min-height: rem(330px);
 }
@@ -91,9 +104,13 @@
 }
 
 .burgers__menu-information--price-order {
-display: flex;
-flex-direction: row;
-align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  @include tablets {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .text-rubles {
@@ -121,25 +138,37 @@ align-items: baseline;
   padding-top: rem(10px);
 
   &.ingr {
-    background-color: #F08B31;
+    background-color: #F08A30;
     border-radius: 5px;
-    top: rem(100px);
-    left: rem(155px);
+    top: 0;
+    left: 0;
     z-index: 1;
     &:hover {
       background-color: #e35028;
       cursor: pointer;
-    }   
+    }
+    @include tablets{
+      top: 0;
+      left: 0;
+      bottom: auto;
+      right: auto;
+    }
   }
 
   &.kkal {
-    bottom: rem(100px);
-    left: rem(155px);
+    bottom: 0;
+    left: 0;
     background: url(../img/content/icons/kkal.svg) center center no-repeat;
     padding-top: rem(40px);
     line-height: rem(30px);
     font-size: rem(17px);
     opacity: 0.6;
+    @include tablets{
+      top: 0;
+      right: 0;
+      bottom: auto;
+      left: auto;
+    }
   }
 }
 
@@ -150,8 +179,8 @@ align-items: baseline;
   border-radius: rem(5px);
   overflow: hidden;
   position: absolute;
-  top: rem(100px);
-  left: rem(245px);
+  top: 0;
+  left: rem(90px);
 }
 
 .hidden-ingredients--content {
