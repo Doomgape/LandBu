@@ -33,6 +33,9 @@
   @include tablets {
     right: 0;
   }
+  @include phones {
+    width: rem(23px);
+  }
 }
 .owl-prev {
   position: absolute;
@@ -42,7 +45,10 @@
   height: rem(27px);
   background: url(../img/content/items/arrow-scroll-left.png) center center no-repeat;  
   @include tablets {
-  left: 0;
+    left: 0;
+  }
+  @include phones {
+    width: rem(23px);
   }
 }
 
@@ -70,6 +76,16 @@
   }
 }
 
+.burgers__menu-picture {
+  width: 50%;
+  min-width: rem(470px);
+  min-height: rem(330px);
+  margin-top: 120px;
+  @include phones {
+    margin-top: 0;
+  }
+}
+
 .first__burger {
   background: url(../img/bg/burger_bg.png) center center no-repeat;
 }
@@ -86,6 +102,13 @@
   background: url(../img/content/items/Spicy_Shrimp_Burger.png) center center no-repeat;
 }
 
+.first__burger, .second__burger, .third__burger,
+.forth__burger, .fifth__burger {
+  @include phones {
+    background-size: 65%;
+  }
+}
+
 .burgers__menu-information {
   display: flex;
   flex-direction: column;
@@ -93,8 +116,9 @@
   @include tablets {
     text-align: center;
     align-items: center;
-    margin: rem(20px) rem(60px);
+    margin: rem(30px);
   }
+
 }
 
 .burgers__menu-information .section__title {
@@ -103,15 +127,11 @@
   line-height: 1;
 }
 
-.burgers__menu-picture {
-  width: 50%;
-  min-width: rem(470px);
-  min-height: rem(330px);
-  margin-top: 120px;
-}
-
 .burgers__menu-information--description {
   color: #fff;
+  @include phones {
+    padding-top: rem(15px);
+  }
 }
 
 .burgers__menu-information--price-order {
@@ -121,6 +141,9 @@
   @include tablets {
     text-align: center;
     margin: 0 auto;
+  }
+  @include phones {
+    padding-top: rem(15px);
   }
 }
 
@@ -171,6 +194,10 @@
       bottom: auto;
       right: auto;
     }
+    @include phones {
+      left: 0;
+      top: 0;
+    }
   }
 
   &.kkal {
@@ -183,9 +210,15 @@
     opacity: 0.6;
     @include tablets{
       top: rem(30px);
-      right: rem(120px) ;
+      right: rem(120px);
       bottom: auto;
       left: auto;
+    }
+    @include phones {
+      top: 0;
+      right: 0;
+      line-height: rem(40px);
+      
     }
   }
 }
@@ -202,6 +235,10 @@
   @include tablets {
     top: rem(50px);
     left: rem(210px);
+  }
+  @include phones {
+    top: 0;
+    left: rem(90px);
   }
 }
 

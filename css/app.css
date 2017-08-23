@@ -120,6 +120,10 @@ img {
   cursor: pointer; }
   .order-link:hover {
     background-color: #b03818; }
+  @media screen and (max-width: 480px) {
+    .order-link {
+      font-size: 1.25rem;
+      padding: 0.6875rem 1.125rem; } }
 
 .hero {
   background-image: url("../img/bg/hero_bg.png");
@@ -137,6 +141,9 @@ img {
 
 .header__logo {
   margin-right: auto; }
+
+.header__btn {
+  margin: 0 1.25rem; }
 
 .nav {
   margin-right: 0.9375rem; }
@@ -363,6 +370,9 @@ img {
   @media screen and (max-width: 768px) {
     .owl-next {
       right: 0; } }
+  @media screen and (max-width: 480px) {
+    .owl-next {
+      width: 1.4375rem; } }
 
 .owl-prev {
   position: absolute;
@@ -374,6 +384,9 @@ img {
   @media screen and (max-width: 768px) {
     .owl-prev {
       left: 0; } }
+  @media screen and (max-width: 480px) {
+    .owl-prev {
+      width: 1.4375rem; } }
 
 .burgers__section {
   display: flex;
@@ -395,6 +408,15 @@ img {
       align-items: center;
       padding-bottom: 0; } }
 
+.burgers__menu-picture {
+  width: 50%;
+  min-width: 29.375rem;
+  min-height: 20.625rem;
+  margin-top: 120px; }
+  @media screen and (max-width: 480px) {
+    .burgers__menu-picture {
+      margin-top: 0; } }
+
 .first__burger {
   background: url(../img/bg/burger_bg.png) center center no-repeat; }
 
@@ -410,6 +432,11 @@ img {
 .fifth__burger {
   background: url(../img/content/items/Spicy_Shrimp_Burger.png) center center no-repeat; }
 
+@media screen and (max-width: 480px) {
+  .first__burger, .second__burger, .third__burger,
+  .forth__burger, .fifth__burger {
+    background-size: 65%; } }
+
 .burgers__menu-information {
   display: flex;
   flex-direction: column;
@@ -418,21 +445,18 @@ img {
     .burgers__menu-information {
       text-align: center;
       align-items: center;
-      margin: 1.25rem 3.75rem; } }
+      margin: 1.875rem; } }
 
 .burgers__menu-information .section__title {
   color: #fff;
   padding-top: 0;
   line-height: 1; }
 
-.burgers__menu-picture {
-  width: 50%;
-  min-width: 29.375rem;
-  min-height: 20.625rem;
-  margin-top: 120px; }
-
 .burgers__menu-information--description {
   color: #fff; }
+  @media screen and (max-width: 480px) {
+    .burgers__menu-information--description {
+      padding-top: 0.9375rem; } }
 
 .burgers__menu-information--price-order {
   display: flex;
@@ -442,6 +466,9 @@ img {
     .burgers__menu-information--price-order {
       text-align: center;
       margin: 0 auto; } }
+  @media screen and (max-width: 480px) {
+    .burgers__menu-information--price-order {
+      padding-top: 0.9375rem; } }
 
 .text-rubles {
   font-size: 1.875rem; }
@@ -483,6 +510,10 @@ img {
         left: 7.5rem;
         bottom: auto;
         right: auto; } }
+    @media screen and (max-width: 480px) {
+      .burgers__menu-inside.ingr {
+        left: 0;
+        top: 0; } }
   .burgers__menu-inside.kkal {
     bottom: 0;
     left: 0;
@@ -497,6 +528,11 @@ img {
         right: 7.5rem;
         bottom: auto;
         left: auto; } }
+    @media screen and (max-width: 480px) {
+      .burgers__menu-inside.kkal {
+        top: 0;
+        right: 0;
+        line-height: 2.5rem; } }
 
 .hidden-ingredients {
   background: rgba(255, 255, 255, 0.9);
@@ -511,6 +547,10 @@ img {
     .hidden-ingredients {
       top: 3.125rem;
       left: 13.125rem; } }
+  @media screen and (max-width: 480px) {
+    .hidden-ingredients {
+      top: 0;
+      left: 5.625rem; } }
 
 .hidden-ingredients--content {
   display: flex;
@@ -1032,8 +1072,8 @@ img {
   vertical-align: middle;
   position: relative;
   height: 2.5rem;
-  width: 2.5rem;
-  margin-left: 0.625rem;
+  width: 2.8125rem;
+  margin: 0 0.625rem;
   display: none; }
   @media screen and (max-width: 768px) {
     .hamburger-menu {
@@ -1041,3 +1081,48 @@ img {
 
 .hamburger-menu__bars {
   fill: #fff; }
+
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(47, 50, 52, 0.99);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 3; }
+
+.visible {
+  display: flex; }
+
+.fullscreen-menu__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.625rem; }
+
+.fullscreen-menu__item {
+  display: block; }
+
+.fullscreen__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.fullscreen__item:after {
+  display: block;
+  content: ' ';
+  width: 0.3125rem;
+  height: 0.3125rem;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: .9375rem auto; }
+
+.fullscreen-menu__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.25rem;
+  box-sizing: content-box; }

@@ -106,7 +106,7 @@ $(function () {
 
 });
 
-    // One Page Scroll
+// Меню fixed право-верх
     $('.fixed-menu__item').on('click', function(e){
       var elem = $(e.target).parent(),
           num = elem.index() + 1,
@@ -118,3 +118,19 @@ $(function () {
           elem.addClass('active');
       }
   });
+
+// полноэкранное меню
+function fullscreen(){
+  $('.hamburger-menu').on('click', function(e){
+      e.preventDefault();
+
+      $('.fullscreen-menu').addClass('visible');
+  });
+
+  $('.fullscreen-menu__close').on('click', function(e){
+      e.preventDefault();
+
+      $('.fullscreen-menu').removeClass('visible');           
+  });
+};
+fullscreen();
