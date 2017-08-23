@@ -137,7 +137,7 @@
                 Команда
               </div>
               <ul class="team-accordeon">
-                <li class="team-accordeon__item ">
+                <li class="team-accordeon__item active">
                   <div class="team-accordeon__title">
                     Дэниел Редклифф
                   </div>
@@ -157,7 +157,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="team-accordeon__item active">
+                <li class="team-accordeon__item">
                   <div class="team-accordeon__title">
                     Ричард Джеймс
                   </div>
@@ -751,7 +751,7 @@
             <div class="section__title">
               Закажите доставку
             </div>
-            <form action="">
+            <form action="../php/mail.php" method="post" id="order-form">
               <div class="order__form-main">
                 <div class="order__left-blocks">
                   <div class="order__outer-blocks">
@@ -760,7 +760,7 @@
                         Имя
                       </div>
                       <div class="form-field">
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" data-error="Не заполнено поле Имя" name="name" type="text" placeholder="">
                       </div>
                     </div>
                     <div class="order__inner-blocks">
@@ -768,17 +768,17 @@
                         Телефон
                       </div>
                       <div class="form-field">
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" data-error="Не заполнено поле Телефон" name="phone" type="text" placeholder="">
                       </div>
                     </div>
                   </div>
                   <div class="order__outer-blocks">
                     <div class="order__inner-blocks">
                       <div class="title">
-                        Адрес
+                        Улица
                       </div>
                       <div class="form-field">
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" data-error="Не заполнено поле Улица" name="street" type="text" placeholder="">
                       </div>
                     </div>
                   </div>
@@ -788,7 +788,7 @@
                         Дом
                       </div>
                       <div class="form-field">
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" data-error="Не заполнено поле Дом" name="home" type="text" placeholder="">
                       </div>
                     </div>
                     <div class="order__inner-blocks">
@@ -796,7 +796,7 @@
                         Корпус
                       </div>
                       <div class="form-field">
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" data-error="Не заполнено поле Корпус" name="part" type="text" placeholder="">
                       </div>
                     </div>
                     <div class="order__inner-blocks">
@@ -804,7 +804,7 @@
                         Квартира
                       </div>
                       <div class="form-field">
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" data-error="Не заполнено поле Квартира" name="appt" type="text" placeholder="">
                       </div>
                     </div>
                     <div class="order__inner-blocks">
@@ -812,7 +812,7 @@
                         Этаж
                       </div>
                       <div class="form-field">
-                        <input type="text" class="form__input">
+                        <input type="text" class="form__input" data-error="Не заполнено поле Этаж" name="floor" type="text" placeholder="">
                       </div>
                     </div>
                   </div>
@@ -824,7 +824,7 @@
                         Комментарий
                       </div>
                       <div class="form-field">
-                        <textarea name="text" class="form__input form-right"></textarea>
+                        <textarea name="text" class="form__input form-right" name="comment"></textarea>
                       </div>
                       <div class="order__radio">
                         <label><input type="radio" class="order__radio-first" checked name="money"/> Потребуется сдача</label>
@@ -933,6 +933,9 @@
 
   <ul class="fixed-menu">
     <li class="fixed-menu__item active">
+      <a href="#" class="fixed-menu__link"></a>
+    </li>
+    <li class="fixed-menu__item">
       <a href="#" class="fixed-menu__link"></a>
     </li>
     <li class="fixed-menu__item">
