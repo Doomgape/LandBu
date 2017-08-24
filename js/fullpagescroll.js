@@ -107,7 +107,7 @@ $(function () {
 });
 
 // Меню fixed право-верх
-    $('.fixed-menu__item').on('click', function(e){
+    $('.fixed-menu__item, .nav__item, .fullscreen__item').on('click', function(e){
       var elem = $(e.target).parent(),
           num = elem.index() + 1,
           siblings = elem.siblings();
@@ -130,7 +130,8 @@ function fullscreen(){
   $('.fullscreen-menu__close').on('click', function(e){
       e.preventDefault();
 
-      $('.fullscreen-menu').removeClass('visible');           
+      $('.fullscreen-menu').removeClass('visible');
+      
   });
 };
 fullscreen();

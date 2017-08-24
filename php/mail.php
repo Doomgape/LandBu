@@ -4,7 +4,7 @@
 	$street = $_POST['street'];
 	$home = $_POST['home'];
 	$part = $_POST['part'];
-	$appt = $_POST['appt'];
+	$flat = $_POST['flat'];
 	$floor = $_POST['floor'];
 	$comment = $_POST['comment'];
 	$payment = $_POST['money'];
@@ -25,7 +25,7 @@
 					<li>Улица: ' . $street . '</li>
 					<li>Дом: ' . $home . '</li>
 					<li>Корпус: ' . $part . '</li>
-					<li>Квартира: ' . $appt . '</li>
+					<li>Квартира: ' . $flat . '</li>
 					<li>Этаж: ' . $floor . '</li>
 					<li>Способ оплаты: ' . $money . '</li>
 					<li>Комментарии к заказу: ' . $comment . '</li>
@@ -46,10 +46,8 @@
     if ($mail) {
         $data['status'] = "OK";
         $data['mes'] = "Письмо успешно отправлено";
-        exit;
     }else{
         $data['status'] = "NO";
         $data['mes'] = "На сервере произошла ошибка";
-        exit;
     }
 ?>

@@ -1452,6 +1452,9 @@ img {
   background-color: #fff;
   margin: .9375rem auto; }
 
+.fullscreen__item:last-child:after {
+  content: none; }
+
 .fullscreen-menu__close {
   position: absolute;
   top: 0;
