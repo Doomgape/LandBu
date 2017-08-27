@@ -1159,6 +1159,7 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+
   resize: none; }
   .form__input.form-right {
     height: 7.3125rem; }
