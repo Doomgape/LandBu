@@ -1,3 +1,285 @@
 .burgers {
   background: linear-gradient(180deg,#f9b43b 0,#eb8c38 40%,#eb8c38 60%,#eb8c38 0,#f9b43b);
+  display: flex;
+  align-items: center;
+}
+
+.burgers__wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  position: relative;
+  max-width: rem(940px);
+}
+
+.burgers__block-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: rem(600px);
+}
+
+.owl-next {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+  width: rem(15px);
+  height: rem(27px);
+  background: url(../img/content/items/arrow-scroll-right.png) center center no-repeat;
+  @include tablets {
+    right: 0;
+  }
+  @include phones {
+    width: rem(23px);
+  }
+}
+.owl-prev {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  width: rem(15px);
+  height: rem(27px);
+  background: url(../img/content/items/arrow-scroll-left.png) center center no-repeat;  
+  @include tablets {
+    left: 0;
+  }
+  @include phones {
+    width: rem(23px);
+  }
+}
+
+.burgers__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.burges__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 95%;
+  &-picture {
+    width: 50%;
+  }
+  &-information {
+    width: 50%;
+  }
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+}
+
+.burgers__menu-picture {
+  width: 50%;
+  min-width: rem(470px);
+  min-height: rem(330px);
+  margin-top: 120px;
+  @include phones {
+    margin-top: 0;
+  }
+}
+
+.first__burger {
+  background: url(../img/bg/burger_bg.png) center center no-repeat;
+}
+.second__burger {
+  background: url(../img/content/items/burger_sandwich_PNG4124.png) center center no-repeat;
+}
+.third__burger {
+  background: url(../img/content/items/Chiken_burger.png) center center no-repeat;
+}
+.forth__burger {
+  background: url(../img/content/items/NYC-Diner-Bacon-Cheeseburger.png) center center no-repeat;
+}
+.fifth__burger {
+  background: url(../img/content/items/Spicy_Shrimp_Burger.png) center center no-repeat;
+}
+
+.first__burger, .second__burger, .third__burger,
+.forth__burger, .fifth__burger {
+  @include phones {
+    background-size: 65%;
+  }
+}
+
+.burgers__menu-information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @include tablets {
+    text-align: center;
+    align-items: center;
+    margin: rem(30px);
+  }
+
+}
+
+.burgers__menu-information .section__title {
+  color: #fff;
+  padding-top:0;
+  line-height: 1;
+}
+
+.burgers__menu-information--description {
+  color: #fff;
+  @include phones {
+    padding-top: rem(15px);
+  }
+}
+
+.burgers__menu-information--price-order {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  @include tablets {
+    text-align: center;
+    margin: 0 auto;
+  }
+  @include phones {
+    padding-top: rem(15px);
+  }
+}
+
+.text-rubles {
+  font-size: rem(30px);
+}
+
+.burgers-price {
+  color: #e35028;
+  font-size: rem(72px);
+  font-family: 'Gagalin';
+}
+
+.burgers-order {
+  padding: rem(20px);
+}
+
+.burgers__menu-inside {
+  width: rem(90px);
+  height: rem(90px);
+  position: absolute;
+  color: #fff;
+  font-size: rem(15px);
+  font-weight: 600;
+  text-align: center;
+
+
+  &.ingr {
+    background-color: #F08A30;
+    border-radius: 5px;
+    top: rem(120px);
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50% !important;
+    }
+    &:hover {
+      background-color: #e35028;
+      cursor: pointer;
+    }
+    @include tablets{
+      top: rem(50px);
+      left: rem(120px);
+      bottom: auto;
+      right: auto;
+    }
+    @include phones {
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &.kkal {
+    bottom: 0;
+    left: 0;
+    background: url(../img/content/icons/kkal.svg) center center no-repeat;
+    padding-top: rem(40px);
+    line-height: rem(30px);
+    font-size: rem(17px);
+    opacity: 0.6;
+    @include tablets{
+      top: rem(30px);
+      right: rem(120px);
+      bottom: auto;
+      left: auto;
+    }
+    @include phones {
+      top: 0;
+      right: 0;
+      line-height: rem(40px);
+      
+    }
+  }
+}
+
+.hidden-ingredients {
+  background: rgba(255,255,255,0.9);
+  display: none;
+  align-items: flex-start;
+  border-radius: rem(5px);
+  overflow: hidden;
+  position: absolute;
+  top: rem(120px);
+  left: rem(90px);
+  @include tablets {
+    top: rem(50px);
+    left: rem(210px);
+  }
+  @include phones {
+    top: 0;
+    left: rem(90px);
+  }
+}
+
+.hidden-ingredients--content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: rem(20px);
+}
+
+.hidden-ingredients--content-pics, 
+.hidden-ingredients--content-name, 
+.hidden-ingredients--content-grams {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden-ingredients--content-pics img {
+padding: rem(10px);
+height: rem(58px);
+}
+
+.content-name--text {
+  height: rem(58px);
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.hidden-ingredients--content-grams {
+  padding-left: rem(60px);
+  padding-right: rem(20px);
+}
+
+.content-name--grams {
+  height: rem(58px);
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+  justify-content: center;
 }
